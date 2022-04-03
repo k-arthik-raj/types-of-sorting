@@ -12,10 +12,10 @@ void selection_sort(vector<int> arr)
         {
             if(*min>*j)
             {
-                min = j;
+                min = arr.at(j);
             }
         }
-        swap(i,min);
+        swap(arr.at(i),arr.at(min));
     }
 }
 void display_arr(vector<int> arr)
